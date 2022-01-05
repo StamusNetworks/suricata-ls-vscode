@@ -11,7 +11,7 @@ The Suricata Language Server needs to be installed separately. It requires Pytho
 
 ## Setup
 
-For the setings on Microsoft Windows, you will need to escape the backslash in the paths you need to enter. With a standard Suricata msi installation
+For the settings on Microsoft Windows, you will need to escape the backslash in the paths you need to enter. With a standard Suricata MSI installation
 and a standard installation of the server with ``pip`` the settings look like:
 
 * Server Path: ``C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\suricata-language-server.exe``
