@@ -8,7 +8,7 @@ Server to provide advanced syntax checking as well as auto-completion when editi
 ## Installation
 
 The Suricata IntelliSense Extension can be installed from the Visual Studio Code Marketplace or from
-the [GitHb project](https://github.com/StamusNetworks/suricata-ls-vscode)
+the [GitHub project](https://github.com/StamusNetworks/suricata-ls-vscode)
 
 The Suricata Language Server needs to be installed separately. See [Suricata Language Server page](https://github.com/StamusNetworks/suricata-language-server)
 for specific instructions about its installation.
@@ -25,7 +25,6 @@ and a standard installation of the server with ``pip`` the settings look like:
 
 It provides auto-completion of Suricata keywords with access to the documentation:
 
-
 ![VSCode Completion](https://raw.githubusercontent.com/StamusNetworks/suricata-ls-vscode/main/images/vscode-completion.png)
 
 The list of keywords is coming from Suricata so it will adapt automatically to the version you are using.
@@ -35,3 +34,4 @@ hints such as the fast pattern that is picked by Suricata:
 
 ![VSCode Hint](https://raw.githubusercontent.com/StamusNetworks/suricata-ls-vscode/main/images/vscode-hint.png)
 
+Syntax highlighting is not provided by this extension.
