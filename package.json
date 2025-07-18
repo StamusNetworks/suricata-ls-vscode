@@ -5,7 +5,7 @@
     "icon": "images/sn-logo.png",
     "author": "regit",
     "license": "MIT",
-    "version": "0.2.1",
+    "version": "0.2.2",
     "publisher": "StamusNetworks",
     "repository": {
         "type": "git",
@@ -20,6 +20,7 @@
         "security",
         "intellisense",
         "autocompletion",
+        "performance tuning",
         "ide"
     ],
     "categories": [
