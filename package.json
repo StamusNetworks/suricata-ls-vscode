@@ -1,4 +1,4 @@
-
+{
     "name": "suricata-ls",
     "displayName": "Suricata IntelliSense",
     "description": "VSCode interface to the Suricata Language Server by Stamus Networks",
