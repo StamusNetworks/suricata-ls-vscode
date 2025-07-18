@@ -24,7 +24,7 @@ jobs:
 
     - name: Build
       run: |
-        npm install -g vsce
+        npm install -g @vscode/vsce
         npm install
         vsce package
 
