@@ -13,9 +13,22 @@ export function activate(context: ExtensionContext) {
   const conf = workspace.getConfiguration('suricata-ls', null);
   const serverPath = conf.get<string>('serverPath') || 'suricata-language-server';
   const suricataPath = conf.get<string>('suricataPath') || 'suricata';
+  const dockerMode = conf.get<boolean>('dockerMode') || false;
+  const dockerImage = conf.get<string>('dockerImage');
+
+  if (dockerMode) {
+      console.log('Suricata LS: Docker mode enabled');
+  }
 
   let args_server = [];
-  args_server.push(`--suricata-binary=${suricataPath}`)
+  if (dockerMode) {
+      args_server.push(`--docker`);
+      if (dockerImage) {
+          args_server.push(`--docker-image=${dockerImage}`);
+      }
+  } else {
+      args_server.push(`--suricata-binary=${suricataPath}`)
+  }
 
   let serverOptions: ServerOptions = {
     run: {
