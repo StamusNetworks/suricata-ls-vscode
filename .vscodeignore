@@ -1,3 +1,5 @@
-nodes_modules/**
+node_modules/**
 .github/**
 .git/**
+images/**
+src/**
