@@ -64,17 +64,17 @@
                     "default": "suricata",
                     "description": "Path to the Suricata binary (suricata)."
                 },
-                "suricata-ls.dockerMode": {
+                "suricata-ls.containerMode": {
                     "scope": "resource",
                     "type": "boolean",
                     "default": false,
-                    "description": "Enable Docker mode to run Suricata inside a Docker container."
+                    "description": "Enable Container mode to run Suricata inside a container."
                 },
-                "suricata-ls.dockerImage": {
+                "suricata-ls.containerImage": {
                     "scope": "resource",
                     "type": "string",
                     "default": null,
-                    "description": "Docker image to use when Docker mode is enabled."
+                    "description": "Image to use when container mode is enabled."
                 }
             }
         }
